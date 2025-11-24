@@ -37,6 +37,6 @@ export class ArtGenerator {
   };
 
   static koalaArt(variant: ArtVariant = 'classic'): string {
-    return this.arts[variant] || this.arts.classic;
+    return ArtGenerator.arts[variant] || ArtGenerator.arts.classic;
   }
 }
