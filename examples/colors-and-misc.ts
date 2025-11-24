@@ -5,6 +5,8 @@
  */
 
 import Koala from '../src/index';
+// Or for CommonJS:
+// const Koala = require('../src/index');
 
 console.log('🐨 KOALA MISCELLANEOUS GENERATORS\n');
 console.log('='.repeat(50));
@@ -13,7 +15,7 @@ console.log('='.repeat(50));
 console.log('\n🎨 1. Koala color palette:\n');
 for (let i = 0; i < 10; i++) {
   const color = Koala.koalaColor();
-  console.log(`  ${color} ${'█'.repeat(5)}`);
+  console.log(`  ${color}`);
 }
 
 // 2. Koala emails

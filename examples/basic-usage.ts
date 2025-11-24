@@ -5,16 +5,18 @@
  */
 
 import Koala from '../src/index';
+// Or for CommonJS:
+// const Koala = require('../src/index');
 
 console.log('🐨 KOALA PACKAGE - BASIC USAGE EXAMPLES\n');
 console.log('='.repeat(50));
 
-// 1. Generate a single koala
+// 1. Generate a single koala in JSON format
 console.log('\n📋 1. Generate a single koala:\n');
 const singleKoala = Koala.generateKoalaData(1);
 console.log(JSON.stringify(singleKoala, null, 2));
 
-// 2. Generate multiple koalas
+// 2. Generate multiple koalas in JSON format
 console.log('\n📋 2. Generate multiple koalas:\n');
 const multipleKoalas = Koala.generateKoalaData(3);
 console.log(JSON.stringify(multipleKoalas, null, 2));

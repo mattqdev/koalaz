@@ -61,7 +61,7 @@ export const KOALA_PASSWORDS: string[] = [
 ];
 
 export const KOALA_DOMAINS: string[] = [
-  'koala.au',
+  'koala.aus',
   'eucalyptus.tree',
   'sleepy.land',
   'marsupial.inc'

@@ -5,6 +5,8 @@
  */
 
 import Koala from '../src/index';
+// Or for CommonJS:
+// const Koala = require('../src/index');
 
 console.log('🐨 KOALA ASCII ART GALLERY\n');
 console.log('='.repeat(50));

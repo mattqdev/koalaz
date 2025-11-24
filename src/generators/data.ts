@@ -8,7 +8,7 @@ export class DataGenerator {
     const koalas: KoalaData[] = [];
     
     for (let i = 0; i < count; i++) {
-      koalas.push(this.createSingleKoala());
+      koalas.push(DataGenerator.createSingleKoala());
     }
     
     return count === 1 ? koalas[0] : koalas;
