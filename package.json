@@ -1,0 +1,53 @@
+{
+  "name": "koala",
+  "version": "1.0.0",
+  "description": "Why don't use koalas as data mock?",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+    "devDependencies": {
+    "@jest/globals": "^30.2.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "eslint": "^9.39.1",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattqdev/koala.git"
+  },
+  "keywords": [
+    "koala",
+    "placeholder",
+    "faker",
+    "mock",
+    "meme",
+    "lorem-ipsum",
+    "test-data",
+    "funny",
+    "eucalyptus",
+    "australia"
+  ],
+  "author": "mattqdev",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mattqdev/koala/issues",
+    "email": "mattqdevv@gmail.com"
+  },
+  "homepage": ""
+}
