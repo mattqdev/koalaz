@@ -1,10 +1,10 @@
-# 🐨 koala
+# 🐨 koalaz
 
 > The most useless but adorable placeholder generator in the npm ecosystem. Because your project deserves koala-themed mock data.
 
-[![npm version](https://img.shields.io/badge/npm-1.0.0-blue)](https://npmjs.com/package/koala)
+[![npm version](https://img.shields.io/badge/npm-1.0.0-blue)](https://npmjs.com/package/koalaz)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Koala Approved](https://img.shields.io/badge/🐨-approved-green)](https://github.com/mattqdev/koala)
+[![Koala Approved](https://img.shields.io/badge/🐨-approved-green)](https://github.com/mattqdev/koalaz)
 
 **⚠️ DISCLAIMER**: This is a meme project. It's intentionally ridiculous. But oddly useful for testing and prototyping. No koalas were harmed during development (they were all sleeping).
 
@@ -14,12 +14,12 @@ Because `lorem ipsum` is boring. Because `faker.js` is too serious. Because your
 
 ## 📥 Installation
 ```bash
-npm install koala
+npm install koalaz
 ```
 
 ## 🚀 Usage
 ```javascript
-const Koala = require('koala');
+const Koala = require('koalaz');
 
 // Generate absurd JSON data about koalas
 const koala = Koala.generateKoalaData();

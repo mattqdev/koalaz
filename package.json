@@ -1,5 +1,5 @@
 {
-  "name": "koala",
+  "name": "koalaz",
   "version": "1.0.0",
   "description": "Why don't use koalas as data mock?",
   "main": "dist/index.js",
@@ -28,25 +28,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattqdev/koala.git"
+    "url": "git+https://github.com/mattqdev/koalaz.git"
   },
   "keywords": [
     "koala",
     "placeholder",
-    "faker",
+    "test-data",
     "mock",
     "meme",
     "lorem-ipsum",
-    "test-data",
+    "mock-data",
     "funny",
     "eucalyptus",
-    "australia"
+    "australia",
+    "koalaz"
   ],
   "author": "mattqdev",
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/mattqdev/koala/issues",
+    "url": "https://github.com/mattqdev/koalaz/issues",
     "email": "mattqdevv@gmail.com"
   },
   "homepage": ""
