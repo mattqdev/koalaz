@@ -4,7 +4,7 @@ import { KOALA_NAMES, KOALA_ACTIONS, KOALA_FACTS } from '../constants/data';
 import { RandomUtils } from '../utils/random';
 
 export class DataGenerator {
-  static generateKoalaData(count: number = 1): KoalaData | KoalaData[] {
+  static generateJSONData(count: number = 1): KoalaData | KoalaData[] {
     const koalas: KoalaData[] = [];
     
     for (let i = 0; i < count; i++) {
@@ -31,11 +31,11 @@ export class DataGenerator {
     };
   }
 
-  static koalaName(): string {
+  static getName(): string {
     return RandomUtils.getRandomElement(KOALA_NAMES);
   }
 
-  static koalaFact(): string {
+  static getFact(): string {
     return RandomUtils.getRandomElement(KOALA_FACTS);
   }
 }

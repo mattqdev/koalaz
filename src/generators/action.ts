@@ -3,7 +3,7 @@ import { KOALA_ACTIONS } from '../constants/data';
 import { RandomUtils } from '../utils/random';
 
 export class ActionGenerator {
-  static koalaActions(count: number = 5): string[] {
+  static getActions(count: number = 5): string[] {
     const shuffled = RandomUtils.shuffleArray(KOALA_ACTIONS);
     return shuffled.slice(0, count);
   }

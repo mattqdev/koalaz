@@ -3,7 +3,7 @@ import { KOALA_SOUNDS } from '../constants/data';
 import { RandomUtils } from '../utils/random';
 
 export class TextGenerator {
-  static koalaIpsum(paragraphs: number = 3, sentencesPerParagraph: number = 5): string {
+  static getLoremIpsum(paragraphs: number = 3, sentencesPerParagraph: number = 5): string {
     let text = '';
     
     for (let p = 0; p < paragraphs; p++) {

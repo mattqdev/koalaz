@@ -13,17 +13,17 @@ console.log('='.repeat(50));
 
 // 1. Small table
 console.log('\n📊 1. Small table (3 rows):\n');
-const smallTable = Koala.koalaTable(3);
+const smallTable = Koala.getTable(3);
 printTable(smallTable);
 
 // 2. Medium table
 console.log('\n📊 2. Medium table (5 rows):\n');
-const mediumTable = Koala.koalaTable(5);
+const mediumTable = Koala.getTable(5);
 printTable(mediumTable);
 
 // 3. Large table
 console.log('\n📊 3. Large table (10 rows):\n');
-const largeTable = Koala.koalaTable(10);
+const largeTable = Koala.getTable(10);
 printTable(largeTable);
 
 // Helper function to print tables nicely

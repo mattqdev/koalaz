@@ -3,7 +3,7 @@ import { KOALA_NAMES } from '../constants/data';
 import { RandomUtils } from '../utils/random';
 
 export class TableGenerator {
-  static koalaTable(rows: number = 5): (string | number)[][] {
+  static getTable(rows: number = 5): (string | number)[][] {
     const headers = ['ID', 'Name', 'Sleep Hours', 'Eucalyptus (g)', 'Mood', 'Tree'];
     const table: (string | number)[][] = [headers];
     const moods = ['😴', '😐', '🙄', '😑'];

@@ -14,20 +14,20 @@ console.log('='.repeat(50));
 // 1. Koala colors
 console.log('\n🎨 1. Koala color palette:\n');
 for (let i = 0; i < 10; i++) {
-  const color = Koala.koalaColor();
+  const color = Koala.getColor();
   console.log(`  ${color}`);
 }
 
 // 2. Koala emails
 console.log('\n📧 2. Koala email addresses:\n');
 for (let i = 0; i < 8; i++) {
-  console.log(`  ${Koala.koalaEmail()}`);
+  console.log(`  ${Koala.getEmail()}`);
 }
 
 // 3. Koala passwords
 console.log('\n🔐 3. Koala passwords (totally secure!):\n');
 for (let i = 0; i < 5; i++) {
-  console.log(`  ${Koala.koalaPassword()}`);
+  console.log(`  ${Koala.getPassword()}`);
 }
 
 // 4. Koala delay demonstration
@@ -35,13 +35,13 @@ console.log('\n⏱️  4. Koala delay (async):\n');
 async function delayDemo() {
   console.log('  Starting delay...');
   const start = Date.now();
-  await Koala.koalaDelay(1000);
+  await Koala.getDelay(1000);
   const elapsed = Date.now() - start;
   console.log(`  Delayed for ${elapsed}ms (requested 1000ms)`);
   
   console.log('\n  Random delay...');
   const start2 = Date.now();
-  await Koala.koalaDelay();
+  await Koala.getDelay();
   const elapsed2 = Date.now() - start2;
   console.log(`  Delayed for ${elapsed2}ms (random koala speed)`);
 }

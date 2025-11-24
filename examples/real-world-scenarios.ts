@@ -22,11 +22,11 @@ interface User {
 }
 
 const mockUsers: User[] = Array.from({ length: 5 }, () => {
-  const koala = Koala.generateKoalaData(1) as any;
+  const koala = Koala.generateJSONData(1) as any;
   return {
     id: koala.id,
-    name: Koala.koalaName(),
-    email: Koala.koalaEmail(),
+    name: Koala.getName(),
+    email: Koala.getEmail(),
     status: koala.mood,
     lastActive: koala.lastMoved
   };
@@ -45,11 +45,11 @@ interface BlogPost {
 }
 
 const mockBlogPost: BlogPost = {
-  title: `The Adventures of ${Koala.koalaName()}`,
-  author: Koala.koalaName(),
-  content: Koala.koalaIpsum(3, 4),
+  title: `The Adventures of ${Koala.getName()}`,
+  author: Koala.getName(),
+  content: Koala.getLoremIpsum(3, 4),
   publishedAt: new Date().toISOString(),
-  tags: Koala.koalaActions(3)
+  tags: Koala.getActions(3)
 };
 
 console.log(JSON.stringify(mockBlogPost, null, 2));
@@ -65,11 +65,11 @@ interface DashboardStats {
 }
 
 const stats: DashboardStats = {
-  totalKoalas: Koala.koalaNumber(100, 500),
-  sleepingKoalas: Koala.koalaNumber(80, 450),
-  activeKoalas: Koala.koalaNumber(10, 50),
-  eucalyptusConsumed: `${Koala.koalaNumber(5000, 15000)}kg`,
-  averageSleepHours: Koala.koalaNumber(18, 22)
+  totalKoalas: Koala.getNumber(100, 500),
+  sleepingKoalas: Koala.getNumber(80, 450),
+  activeKoalas: Koala.getNumber(10, 50),
+  eucalyptusConsumed: `${Koala.getNumber(5000, 15000)}kg`,
+  averageSleepHours: Koala.getNumber(18, 22)
 };
 
 console.log(JSON.stringify(stats, null, 2));
@@ -77,7 +77,7 @@ console.log(JSON.stringify(stats, null, 2));
 // Scenario 4: Error messages with art
 console.log('\n❌ Scenario 4: Friendly Error Messages\n');
 function showError(errorCode: number, message: string) {
-  console.log(Koala.koalaArt('error'));
+  console.log(Koala.getArt('error'));
   console.log(`Error ${errorCode}: ${message}\n`);
 }
 
@@ -88,10 +88,10 @@ showError(500, 'Server is taking a koala nap');
 console.log('\n⏳ Scenario 5: Simulating Loading States\n');
 async function simulateLoading() {
   console.log('Loading koala data...');
-  console.log(Koala.koalaArt('sleeping'));
-  await Koala.koalaDelay(1500);
+  console.log(Koala.getArt('sleeping'));
+  await Koala.getDelay(1500);
   console.log('Done! Here\'s your koala:\n');
-  console.log(JSON.stringify(Koala.generateKoalaData(1), null, 2));
+  console.log(JSON.stringify(Koala.generateJSONData(1), null, 2));
 }
 
 simulateLoading();

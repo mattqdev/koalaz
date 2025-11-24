@@ -13,19 +13,19 @@ console.log('='.repeat(50));
 
 // 1. Simple GET request
 console.log('\n🌐 1. GET /api/koalas\n');
-const getResponse = Koala.koalaAPI('/api/koalas');
+const getResponse = Koala.getAPI('/api/koalas');
 console.log(JSON.stringify(getResponse, null, 2));
 
 // 2. Specific endpoint
 console.log('\n🌐 2. GET /api/koalas/sleeping\n');
-const sleepingResponse = Koala.koalaAPI('/api/koalas/sleeping');
+const sleepingResponse = Koala.getAPI('/api/koalas/sleeping');
 console.log(JSON.stringify(sleepingResponse, null, 2));
 
 // 3. Multiple API calls
 console.log('\n🌐 3. Multiple API calls:\n');
 const endpoints = ['/api/koalas', '/api/eucalyptus', '/api/trees'];
 endpoints.forEach(endpoint => {
-  const response = Koala.koalaAPI(endpoint);
+  const response = Koala.getAPI(endpoint);
   console.log(`${endpoint}:`);
   console.log(`  Status: ${response.status}`);
   console.log(`  Message: ${response.message}`);

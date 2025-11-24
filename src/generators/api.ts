@@ -4,12 +4,12 @@ import { DataGenerator } from './data';
 import { RandomUtils } from '../utils/random';
 
 export class APIGenerator {
-  static koalaAPI(endpoint: string = '/koalas'): KoalaAPIResponse {
+  static getAPI(endpoint: string = '/koalas'): KoalaAPIResponse {
     return {
       status: RandomUtils.getBiasedNumber(200, 299),
       endpoint,
       timestamp: new Date().toISOString(),
-      data: DataGenerator.generateKoalaData(RandomUtils.getBiasedNumber(1, 5)),
+      data: DataGenerator.generateJSONData(RandomUtils.getBiasedNumber(1, 5)),
       message: 'zzzzz... operation completed successfully',
       koalaApproved: true,
       metadata: {

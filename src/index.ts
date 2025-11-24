@@ -21,25 +21,25 @@ export { MiscGenerator } from './generators/misc';
 
 // Main class for convenience
 export class Koala {
-  static generateKoalaData = DataGenerator.generateKoalaData;
-  static koalaName = DataGenerator.koalaName;
-  static koalaFact = DataGenerator.koalaFact;
+  static generateJSONData = DataGenerator.generateJSONData;
+  static getName = DataGenerator.getName;
+  static getFact = DataGenerator.getFact;
   
-  static koalaIpsum = TextGenerator.koalaIpsum;
+  static getLoremIpsum = TextGenerator.getLoremIpsum;
   
-  static koalaArt = ArtGenerator.koalaArt;
+  static getArt = ArtGenerator.getArt;
   
-  static koalaActions = ActionGenerator.koalaActions;
+  static getActions = ActionGenerator.getActions;
   
-  static koalaTable = TableGenerator.koalaTable;
+  static getTable = TableGenerator.getTable;
   
-  static koalaAPI = APIGenerator.koalaAPI;
+  static getAPI = APIGenerator.getAPI;
   
-  static koalaColor = MiscGenerator.koalaColor;
-  static koalaEmail = MiscGenerator.koalaEmail;
-  static koalaPassword = MiscGenerator.koalaPassword;
-  static koalaDelay = MiscGenerator.koalaDelay;
-  static koalaNumber = MiscGenerator.koalaNumber;
+  static getColor = MiscGenerator.getColor;
+  static getEmail = MiscGenerator.getEmail;
+  static getPassword = MiscGenerator.getPassword;
+  static getDelay = MiscGenerator.getDelay;
+  static getNumber = MiscGenerator.getNumber;
 }
 
 export default Koala;
