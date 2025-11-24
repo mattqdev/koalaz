@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/mattqdev/koalaz/compare/v1.0.1...v1.1.0) (2025-11-24)
+
+
+### Features
+
+* changed methods in more significant names ([e6ff037](https://github.com/mattqdev/koalaz/commit/e6ff0370f30f01e6f0b8ac7086e5b15a0001efa9))
+
 # 1.0.0 (2025-11-24)
 
 
