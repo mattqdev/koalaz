@@ -19,6 +19,8 @@ npm install koalaz
 
 ## 🚀 Usage
 ```javascript
+import Koala from 'koalaz';
+// or
 const Koala = require('koalaz');
 
 // Generate absurd JSON data about koalas
