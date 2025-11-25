@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/mattqdev/koalaz/compare/v1.1.0...v1.1.1) (2025-11-25)
+
+
+### Bug Fixes
+
+* update project description and add homepage link in package.json ([3a0e3b9](https://github.com/mattqdev/koalaz/commit/3a0e3b9c97dd0690b405734f86a2bece25b13a24))
+
 # [1.1.0](https://github.com/mattqdev/koalaz/compare/v1.0.1...v1.1.0) (2025-11-24)
 
 
