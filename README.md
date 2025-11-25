@@ -101,6 +101,7 @@ Mock complete API response with absurd metadata.
 - `getPassword()` - "Secure" password
 - `getDelay(ms)` - Async "realistic" delay (slow like a koala)
 
+
 ## 🎭 Use Cases
 
 - **Testing & Mocking**: Fun placeholder data for automated tests
