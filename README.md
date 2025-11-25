@@ -1,3 +1,7 @@
+<div align="center">
+<img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyd2VocXVjODB6MmMwbHB2eWtzdGJpcHZ2emp5ZHRoMXZ6ejVqeDhreCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0Exp5zQH1jP7Dcbe/200w.gif" width=40% height=40%  alt="koala gif" />
+</div>
+
 # 🐨 koalaz
 
 > The most useless but adorable placeholder generator in the npm ecosystem. Because your project deserves koala-themed mock data.
