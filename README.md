@@ -26,10 +26,10 @@ npm install koalaz
 ```javascript
 import Koala from 'koalaz';
 // or
-const Koala = require('koalaz');
+// const Koala = require('koalaz');
 
 // Generate absurd JSON data about koalas
-const koala = Koala.generateKoalaData();
+const koala = Koala.generateJSONData();
 console.log(koala);
 // {
 //   id: 'KOALA-4287',
@@ -45,61 +45,61 @@ console.log(koala);
 // }
 
 // Lorem ipsum made of koala sounds
-console.log(Koala.koalaIpsum(2, 3));
+console.log(Koala.getLoremIpsum(2, 3));
 // WAAAAH grrrumph eucalyptus munch snort. zzzzz wheeze grunt...
 
 // ASCII Art!
-console.log(Koala.koalaArt('judging'));
+console.log(Koala.getArt('judging'));
 //     ʕ ಠᴥಠʔ
 //    /|     |\\
 //   (_|     |_)
 //   judging you
 
 // Fake data tables
-const table = Koala.koalaTable(3);
+const table = Koala.getTable(3);
 console.log(table);
 
 // API response faker
-const response = Koala.koalaAPI('/api/koalas/sleep');
+const response = Koala.getAPI('/api/koalas/sleep');
 
 // And much more!
-console.log(Koala.koalaName());      // 'Supreme Eucalyptus'
-console.log(Koala.koalaFact());      // 'Sleeps more than you've ever dreamed of'
-console.log(Koala.koalaColor());     // '#8B7D6B'
-console.log(Koala.koalaEmail());     // 'sir.dormington@sleepy.land'
-console.log(Koala.koalaActions(3));  // Array of 3 ridiculous actions
+console.log(Koala.getName());      // 'Supreme Eucalyptus'
+console.log(Koala.getFact());      // 'Sleeps more than you've ever dreamed of'
+console.log(Koala.getColor());     // '#8B7D6B'
+console.log(Koala.getEmail());     // 'sir.dormington@sleepy.land'
+console.log(Koala.getActions(3));  // Array of 3 ridiculous actions
 ```
 
 ## 🎨 Complete API
 
-### `Koala.generateKoalaData(count = 1)`
+### `Koala.generateJSONData(count = 1)`
 Generates JSON objects with completely absurd koala data.
 
-### `Koala.koalaIpsum(paragraphs = 3, sentencesPerParagraph = 5)`
+### `Koala.getLoremIpsum(paragraphs = 3, sentencesPerParagraph = 5)`
 Lorem ipsum made entirely of koala sounds. Perfect for text placeholders.
 
-### `Koala.koalaArt(variant = 'classic')`
+### `Koala.getArt(variant = 'classic')`
 ASCII art of koalas. Variants: `'classic'`, `'sleeping'`, `'judging'`, `'party'`, `'error'`
 
-### `Koala.koalaActions(count = 5)`
+### `Koala.getActions(count = 5)`
 List of ridiculous actions that koalas might do (or more likely won't do).
 
-### `Koala.koalaTable(rows = 5)`
+### `Koala.getTable(rows = 5)`
 Generates fake tabular data in array format.
 
-### `Koala.koalaNumber(min = 0, max = 100)`
+### `Koala.getNumber(min = 0, max = 100)`
 Random number with bias towards lower values (like koalas: slow and lazy).
 
-### `Koala.koalaAPI(endpoint = '/koalas')`
+### `Koala.getAPI(endpoint = '/koalas')`
 Mock complete API response with absurd metadata.
 
 ### Other methods:
-- `koalaName()` - Random name
-- `koalaFact()` - Random fact
-- `koalaColor()` - Hexadecimal color inspired by koalas
-- `koalaEmail()` - Fake email
-- `koalaPassword()` - "Secure" password
-- `koalaDelay(ms)` - Async "realistic" delay (slow like a koala)
+- `getName()` - Random name
+- `getFact()` - Random fact
+- `getColor()` - Hexadecimal color inspired by koalas
+- `getEmail()` - Fake email
+- `getPassword()` - "Secure" password
+- `getDelay(ms)` - Async "realistic" delay (slow like a koala)
 
 ## 🎭 Use Cases
 
