@@ -3,6 +3,7 @@
 > The most useless but adorable placeholder generator in the npm ecosystem. Because your project deserves koala-themed mock data.
 
 [![npm version](https://img.shields.io/npm/v/koalaz)](https://www.npmjs.com/package/koalaz)
+[![npm downloads](https://img.shields.io/npm/dw/koalaz)](https://www.npmjs.com/package/koalaz)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Koala Approved](https://img.shields.io/badge/🐨-approved-green)](https://github.com/mattqdev/koalaz)
 
@@ -10,7 +11,7 @@
 
 ## 🎯 Why?
 
-Because `lorem ipsum` is boring. Because `faker.js` is too serious. Because your tests deserve to be adorable and absurd. Because koalas.
+Because `lorem ipsum` is boring. Because `faker` is too serious. Because your tests deserve to be adorable and absurd. Because koalas.
 
 ## 📥 Installation
 ```bash
