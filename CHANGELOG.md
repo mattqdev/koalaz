@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/mattqdev/koalaz/compare/v1.1.2...v1.1.3) (2025-11-26)
+
+
+### Bug Fixes
+
+* fixed all tests files ([00aa705](https://github.com/mattqdev/koalaz/commit/00aa70542fa76fd2dd69dd7a487c60a307d6cf9d))
+
 ## [1.1.2](https://github.com/mattqdev/koalaz/compare/v1.1.1...v1.1.2) (2025-11-25)
 
 
