@@ -1,5 +1,6 @@
 import { describe, it, expect } from '@jest/globals';
 import { MiscGenerator } from '../src/generators/misc';
+import { KOALA_DOMAINS } from '../src/constants/data';
 
 describe('MiscGenerator', () => {
   describe('koalaColor', () => {
@@ -17,9 +18,8 @@ describe('MiscGenerator', () => {
 
     it('should use koala domains', () => {
       const email = MiscGenerator.getEmail();
-      const domains = ['koala.au', 'eucalyptus.tree', 'sleepy.land', 'marsupial.inc'];
       const domain = email.split('@')[1];
-      expect(domains).toContain(domain);
+      expect(KOALA_DOMAINS).toContain(domain);
     });
   });
 

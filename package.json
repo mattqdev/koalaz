@@ -14,7 +14,8 @@
     "test:coverage": "jest --coverage",
     "lint": "eslint src/**/*.ts",
     "prepublishOnly": "npm run build",
-    "example": "ts-node examples/$npm_config_file.ts"
+    "example": "ts-node examples/$npm_config_file.ts",
+    "examples:all": "ts-node examples/run-all.ts"
   },
   "devDependencies": {
     "@jest/globals": "^30.2.0",

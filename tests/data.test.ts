@@ -1,6 +1,7 @@
 import { describe, it, expect } from '@jest/globals';
 import { DataGenerator } from '../src/generators/data';
 import { KoalaData } from '../src/types';
+import { KOALA_MOODS } from '../src/constants/data';
 
 describe('DataGenerator', () => {
   describe('generateKoalaData', () => {
@@ -29,9 +30,8 @@ describe('DataGenerator', () => {
     });
 
     it('should generate valid mood values', () => {
-      const validMoods = ['bored', 'sleepy', 'indifferent', 'slightly annoyed'];
       const koala = DataGenerator.generateJSONData(1) as KoalaData;
-      expect(validMoods).toContain(koala.mood);
+      expect(KOALA_MOODS).toContain(koala.mood);
     });
 
     it('should generate tree loyalty percentage', () => {

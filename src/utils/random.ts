@@ -1,10 +1,25 @@
 export class RandomUtils {
   static getRandomElement<T>(array: T[]): T {
-    return array[Math.floor(Math.random() * array.length)];
+    if (!array.length) {
+      throw new Error('RandomUtils.getRandomElement cannot operate on an empty array.');
+    }
+
+    const index = Math.floor(Math.random() * array.length);
+    return array[index];
   }
 
   static getRandomNumber(min: number, max: number): number {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    const normalizedMin = Math.ceil(min);
+    const normalizedMax = Math.floor(max);
+
+    if (!Number.isFinite(normalizedMin) || !Number.isFinite(normalizedMax)) {
+      throw new Error('RandomUtils.getRandomNumber received invalid bounds.');
+    }
+
+    const low = normalizedMin <= normalizedMax ? normalizedMin : normalizedMax;
+    const high = normalizedMin <= normalizedMax ? normalizedMax : normalizedMin;
+
+    return Math.floor(Math.random() * (high - low + 1)) + low;
   }
 
   static getBiasedNumber(min: number, max: number): number {
@@ -15,6 +30,11 @@ export class RandomUtils {
   }
 
   static shuffleArray<T>(array: T[]): T[] {
-    return [...array].sort(() => 0.5 - Math.random());
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = RandomUtils.getRandomNumber(0, i);
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
   }
 }

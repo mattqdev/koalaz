@@ -1,4 +1,5 @@
 // src/constants/data.ts
+import type { KoalaMood } from '../types';
 export const KOALA_SOUNDS: string[] = [
   'WAAAAH', 'grrrumph', 'snort', 'wheeze', 'belch', 'grunt', 
   'squeak', 'moan', 'sigh', 'eucalyptus', 'zzzzz', 'munch'
@@ -41,6 +42,13 @@ export const KOALA_FACTS: string[] = [
   'Brain occupies only 61% of skull, rest is empty'
 ];
 
+export const KOALA_MOODS: KoalaMood[] = [
+  'bored',
+  'sleepy',
+  'indifferent',
+  'slightly annoyed'
+];
+
 export const KOALA_COLORS: string[] = [
   '#8B7D6B', // koala gray
   '#A9A9A9', // lighter gray
@@ -61,8 +69,9 @@ export const KOALA_PASSWORDS: string[] = [
 ];
 
 export const KOALA_DOMAINS: string[] = [
-  'koala.aus',
+  'koala.au',
   'eucalyptus.tree',
   'sleepy.land',
-  'marsupial.inc'
+  'marsupial.inc',
+  'koala.aus'
 ];

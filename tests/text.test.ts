@@ -1,5 +1,6 @@
 import { describe, it, expect } from '@jest/globals';
 import { TextGenerator } from '../src/generators/text';
+import { KOALA_SOUNDS } from '../src/constants/data';
 
 describe('TextGenerator', () => {
   describe('koalaIpsum', () => {
@@ -24,13 +25,9 @@ describe('TextGenerator', () => {
 
     it('should only contain koala sounds', () => {
       const text = TextGenerator.getLoremIpsum(2, 3);
-      const koalaSounds = ['WAAAAH', 'grrrumph', 'snort', 'wheeze', 'belch', 
-                          'grunt', 'squeak', 'moan', 'sigh', 'eucalyptus', 
-                          'zzzzz', 'munch'];
-      
       const words = text.replace(/\./g, '').split(/\s+/);
       words.forEach(word => {
-        expect(koalaSounds).toContain(word);
+        expect(KOALA_SOUNDS).toContain(word);
       });
     });
   });
