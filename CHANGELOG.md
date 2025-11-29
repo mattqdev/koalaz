@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/mattqdev/koalaz/compare/v1.1.3...v1.2.0) (2025-11-29)
+
+
+### Features
+
+* enhance koala data generation and validation utilities ([f24b550](https://github.com/mattqdev/koalaz/commit/f24b5509509d4626c0bef84f2fe1097bdf2068f0))
+
 ## [1.1.3](https://github.com/mattqdev/koalaz/compare/v1.1.2...v1.1.3) (2025-11-26)
 
 
